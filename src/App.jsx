@@ -5,22 +5,30 @@ import Home from './pages/Home';
 import MatchDetails from './pages/MatchDetails';
 import Schedule from './pages/Schedule';
 import News from './pages/News';
+import About from './pages/About';
+import NotFound from './pages/NotFound';
 import Spiner from './components/Spiner';
+import Login from './pages/Login';
+import Register from './pages/Register';
 
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
-      <div className='d-flex justify-content-center mt-2'>
-        <Spiner/>
-      </div>
-      <div className="container mt-4">
+      <Navbar/>
+      <div className="m-4">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/match/:id" element={<MatchDetails />} />
           <Route path="/schedule" element={<Schedule />} />
           <Route path="/news" element={<News />} />
+          <Route path="/about" element={<About/>} />
+          <Route path="/login" element={<Login/>}/>
+          <Route path="/register" element={<Register/>}/>
+          <Route path="/*" element={<NotFound/>} />
         </Routes>
+      </div>
+      <div className='d-flex justify-content-center mt-2'>
+        <Spiner/>
       </div>
       <Footer />
     </BrowserRouter>

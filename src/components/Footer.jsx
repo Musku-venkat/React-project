@@ -1,7 +1,7 @@
 function Footer() {
   return (
-    <footer className="bg-dark text-white text-center py-3 mt-4">
-      © 2025 Cricbuzz Clone | Built with Bootstrap + React
+    <footer className="bg-dark text-white text-center py-3 m-2 rounded-2">
+      © 2025 CricAlerts | Built with React + Bootstrap
     </footer>
   );
 }
