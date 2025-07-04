@@ -6,7 +6,6 @@ import MatchDetails from './pages/MatchDetails';
 import Schedule from './pages/Schedule';
 import News from './pages/News';
 import About from './pages/About';
-import NotFound from './pages/NotFound';
 import Spiner from './components/Spiner';
 import Login from './pages/Login';
 import Register from './pages/Register';
@@ -24,7 +23,6 @@ function App() {
           <Route path="/about" element={<About/>} />
           <Route path="/login" element={<Login/>}/>
           <Route path="/register" element={<Register/>}/>
-          <Route path="/*" element={<NotFound/>} />
         </Routes>
       </div>
       <div className='d-flex justify-content-center mt-2'>
